@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export const Navbar: React.FunctionComponent = () => (
   <nav>
@@ -8,10 +9,10 @@ export const Navbar: React.FunctionComponent = () => (
       </a>
       <ul className='right hide-on-med-and-down'>
         <li>
-          <a href='/'>Main</a>
+          <NavLink to='/'>Main</NavLink>
         </li>
         <li>
-          <a href='/'>About</a>
+          <NavLink to='/about'>About</NavLink>
         </li>
       </ul>
     </div>
